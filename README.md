@@ -1,1 +1,1 @@
-# simple_calculator
+Using html,css and basic javascript
