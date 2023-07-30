@@ -1,1 +1,1 @@
-Using html,css and basic javascript
+Using html,css and basics of javascript
