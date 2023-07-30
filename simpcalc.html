@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>simple calculator</title>
+<link rel="stylesheet" href="simpcalc.css">
+<script>
+function operation(op){
+var result=0;
+var n1=parseInt(document.getElementById("inp1").value);
+var n2=parseInt(document.getElementById("inp2").value);
+if(op=="+"){
+result=n1+n2;
+}
+else if(op=="-"){
+result=n1-n2;
+}
+else if(op=="*"){
+result=n1*n2;
+}
+else{
+result=n1/n2;
+}
+document.getElementById("res").value=result;
+}
+</script>
+</head>
+<body>
+<center><h1>SIMPLE CALCULATOR</h1></center>
+<div align="center">
+<table class="tab">
+<tr>
+<td><label for="inp1">Enter the First number:</label></td>
+<td><input type="number" id="inp1" size="30px"></td>
+</tr>
+<tr>
+<td><label for="inp2">Enter the second number:</label></td>
+<td><input type="number" id="inp2" size="30px"></td>
+</tr>
+<tr>
+<td>
+<input type="button"  value="+" onclick="operation(this.value);">
+<input type="button"  value="-" onclick="operation(this.value);">
+<input type="button"  value="*" onclick="operation(this.value);">
+<input type="button"  value="/" onclick="operation(this.value);"></td>
+</tr>
+<tr>
+<td><label for="res">Result:</label></td>
+<td><input type="number" id="res" size="30px"></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
