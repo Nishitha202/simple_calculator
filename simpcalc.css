@@ -10,7 +10,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 h1{
 	color:black;
 	background-color:lightblue;
-	border:5px  black;
+	border:5px dashed black;
 	border-radius:10px;
 }
 body{
